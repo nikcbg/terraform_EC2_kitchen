@@ -53,9 +53,9 @@ Command execution |	Command outcome
 
 ### Commands needed to test with `kitchen`.
 
-Command execution                    | Command outcome
------------------------------------- | --------------------------------------------------------------
-`bundle exec kitchen list`           | to list `kitchen` instances.
+Command execution | Command outcome
+------------------|--------------------------------------------------------------
+`bundle exec kitchen list` | to list `kitchen` instances.
 `bundle exec kitchen converge` | to create `kitchen` environment.
 `bundle exec kitchen verify` | command to execute `kitchen` test.
 `bundle exec kitchen destroy` | to destroy `kitchen` environment.
