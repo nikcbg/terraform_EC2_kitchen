@@ -43,6 +43,7 @@ Command execution |	Command outcome
 `rbenv` | command to verify that `rbenv` is set up properly.
 
 - Next execute the commands in the table below:
+
 Command execution |	Command outcome
 ------------------|--------------------------
 `rbenv install 2.3.1`	| to install ruby 2.3.1 version.
@@ -53,8 +54,8 @@ Command execution |	Command outcome
 
 ### Commands needed to test with `kitchen`.
 
-Command execution | Command outcome
-------------------|--------------------------------------------------------------
+Command execution |	Command outcome
+------------------|--------------------------
 `bundle exec kitchen list` | to list `kitchen` instances.
 `bundle exec kitchen converge` | to create `kitchen` environment.
 `bundle exec kitchen verify` | command to execute `kitchen` test.
