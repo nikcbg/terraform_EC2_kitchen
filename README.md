@@ -18,7 +18,7 @@ File name                            | File description
 
 ### How to use this repository. 
 - Install `terraform` by following this [instructions](https://www.terraform.io/intro/getting-started/install.html).
-- Clone the repository to your local computer: `git clone git@github.com:nikcbgterraform_EC2_kitchen`.
+- Clone the repository to your local computer: `git clone git@github.com:nikcbg/terraform_EC2_kitchen`.
 - Go to the cloned repo on your computer: `cd terraform_EC2_kitchen`.
 
 ### Creating and configuring the AWS box.
@@ -31,14 +31,18 @@ File name                            | File description
 - Once the box is ready you need to set up your testing environment.
 
 ### Setting up `ruby` environment on Ubuntu 16.04 instructions:
-- Execute sudo apt update to update the packages on your Ubuntu VM.
-- Execute sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev to install ruby dependencies.
-- Execute git clone https://github.com/rbenv/rbenv.git ~/.rbenv to clone rbenv repo.
-- Execute echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc to change your ~/.bashrc file to use ruby command line utility.
-- Execute echo 'eval "$(rbenv init -)"' >> ~/.bashrc so rbenv loads automatically.
-- Execute source ~/.bashrc to reload bash profile.
-- Execute type rbenv command to verify that rbenv is set up properly.
-- Next execute the commands in teh table below:
+
+Command execution |	Command outcome
+------------------|--------------------------
+`sudo apt update` | to update the packages on your machine.
+`sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev` | to install ruby dependencies.
+`git clone https://github.com/rbenv/rbenv.git ~/.rbenv` | to clone rbenv repo.
+`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc to change your ~/.bashrc file` | to use ruby command line utility.
+`'eval "$(rbenv init -)"' >> ~/.bashrc` | so rbenv loads automatically.
+`source ~/.bashrc` | to reload bash profile.
+`rbenv` | command to verify that `rbenv` is set up properly.
+
+- Next execute the commands in the table below:
 Command execution |	Command outcome
 ------------------|--------------------------
 `rbenv install 2.3.1`	| to install ruby 2.3.1 version.
