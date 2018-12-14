@@ -55,7 +55,7 @@ Command execution |	Command outcome
 
 Command execution                    | Command outcome
 ------------------------------------ | --------------------------------------------------------------
-`bundle exec kitchen list` | to list `kitchen` instances.
+`bundle exec kitchen list`           | to list `kitchen` instances.
 `bundle exec kitchen converge` | to create `kitchen` environment.
 `bundle exec kitchen verify` | command to execute `kitchen` test.
 `bundle exec kitchen destroy` | to destroy `kitchen` environment.
@@ -79,4 +79,5 @@ Test Summary: 1 successful, 0 failures, 0 skipped
 ```
 
 
-### TO DO: Check if everything works as expected. 
+### TO DO: 
+- Check if everything works as expected. 
