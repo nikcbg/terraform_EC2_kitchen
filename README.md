@@ -21,12 +21,20 @@ File name                            | File description
 - Clone the repository to your local computer: `git clone git@github.com:nikcbg/terraform_EC2_kitchen`.
 - Go to the cloned repo on your computer: `cd terraform_EC2_kitchen`.
 
-### Creating and configuring the AWS box.
+### Creating and configuring the EC2 instance.
 ### Note: NEVER make your AWS access keys public so you can prevent your account from been compromised.
 - To be able to connect to your AWS account without compromising your credentials you need to use environment variables.
 - You need to get your secret access and access keys form your AWS account, you can follow this [instructions](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
 - 
-- Execute `packer validate template.json` to validate the template.
+- 
+-
+-
+-
+-
+-
+-
+-
+
 
 - Once the box is ready you need to set up your testing environment.
 
@@ -37,7 +45,7 @@ Command execution |	Command outcome
 `sudo apt update` | to update the packages on your machine.
 `sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev` | to install ruby dependencies.
 `git clone https://github.com/rbenv/rbenv.git ~/.rbenv` | to clone rbenv repo.
-`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc to change your ~/.bashrc file` | to use ruby command line utility.
+`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc` | to change your `~/.bashrc` file.
 `'eval "$(rbenv init -)"' >> ~/.bashrc` | so rbenv loads automatically.
 `source ~/.bashrc` | to reload bash profile.
 `rbenv` | command to verify that `rbenv` is set up properly.
