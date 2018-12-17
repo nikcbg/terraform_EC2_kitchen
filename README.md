@@ -21,22 +21,6 @@ File name                            | File description
 - Clone the repository to your local computer: `git clone git@github.com:nikcbg/terraform_EC2_kitchen`.
 - Go to the cloned repo on your computer: `cd terraform_EC2_kitchen`.
 
-### Creating and configuring the EC2 instance.
-### Note: NEVER make your AWS access keys public so you can prevent your account from been compromised.
-- To be able to connect to your AWS account without compromising your credentials you need to use environment variables.
-- You need to get your secret access and access keys form your AWS account, you can follow this [instructions](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-- 
-- 
--
--
--
--
--
--
--
-
-
-- Once the box is ready you need to set up your testing environment.
 
 ### Setting up `ruby` environment on Ubuntu 16.04 instructions:
 
@@ -68,20 +52,13 @@ Command execution |	Command outcome
 - If the command/s complete successfully the output will display the following:
 
 ```
- Profile: default
-Version: (not specified)
-Target:  local://
-
   ✔  operating_system: Command: `lsb_release -a`
      ✔  Command: `lsb_release -a` stdout should match /Ubuntu/
 
-
 Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
 Test Summary: 1 successful, 0 failures, 0 skipped
-       Finished verifying <default-ubuntu> (0m0.27s).
 
 ```
-
 
 ### TO DO: 
 - Check if everything works as expected. 
