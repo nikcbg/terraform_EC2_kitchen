@@ -21,8 +21,7 @@ File name                            | File description
 - Clone the repository to your local computer: `git clone git@github.com:nikcbg/terraform_EC2_kitchen`.
 - Go to the cloned repo on your computer: `cd terraform_EC2_kitchen`.
 
-
-### Setting up `ruby` environment on Ubuntu 16.04 instructions:
+### Setting up `ruby` environment for `kitchen` testing framework:
 
 Command execution |	Command outcome
 ------------------|--------------------------
