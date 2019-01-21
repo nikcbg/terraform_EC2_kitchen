@@ -1,7 +1,8 @@
+---
 driver:
   name: terraform
   variable_files:
-    - terraform.tfvars
+    - testing.tfvars
 
 provisioner:
   name: terraform
@@ -9,15 +10,18 @@ provisioner:
 platforms:
  - name: ubuntu
 
+transport:
+  name: ssh
+  ssh_key: /home/nikolay/aws_key_pair.pem
+
 verifier:
   name: terraform
+  format: doc
   systems:
     - name: default
-      backend: ssh
-      hostnames: public_ip
-      user: ubuntu
-      hosts_output: public_ip
-      key_files:
-      - /home/nikolay/AWS_key/aws_key_pair.pem
+      backend: local
+      hostnames: public_dns
+      username: ubuntu
+
 suites:
   - name: default
